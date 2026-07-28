@@ -1,0 +1,18 @@
+@use "styles/common";
+@use "normalize.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: common.$font-main;
+  background-color: common.$color-bg;
+  color: common.$color-text;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
