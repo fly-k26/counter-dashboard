@@ -1,0 +1,42 @@
+@use "../../styles/common";
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn-logout {
+  background-color: common.$color-surface;
+  color: common.$color-text;
+  border: 1px solid common.$color-border;
+}
+
+.action-btn-logout:hover {
+  background-color: lighten(#262629, 5%);
+}
+
+.action-btn-login {
+  background-color: common.$color-button-primary-bg;
+  color: common.$color-button-primary-text;
+  border: 1px solid common.$color-button-primary-bg;
+}
+
+.action-btn-login:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,31 @@
+@use "../../styles/common";
+
+.reset-container {
+  width: 100%;
+}
+
+.reset-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  background-color: common.$color-surface;
+  color: common.$color-text-secondary;
+  border: 1px solid common.$color-border;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-btn-icon {
+  flex-shrink: 0;
+}
+
+.reset-btn:hover {
+  color: common.$color-text;
+  border-color: lighten(#3a3a3c, 10%);
+}
