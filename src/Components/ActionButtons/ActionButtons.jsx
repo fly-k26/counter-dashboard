@@ -8,7 +8,6 @@ function ActionButtons() {
                 <Minus className="action-btn-icon" size={20} />
                 <span>Odjava</span>
             </button>
-
             <button type="button" className="action-btn action-btn-login">
                 <Plus className="action-btn-icon" size={20} />
                 <span>Prijava</span>

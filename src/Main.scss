@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 body {
   font-family: common.$font-main;
   background-color: common.$color-bg;
@@ -15,4 +21,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.counter-card {
+  width: 100%;
+  background-color: common.$color-surface;
+  border: 1px solid common.$color-border;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    max-width: 440px;
+  }
+
+  .counter-card {
+    padding: 16px;
+  }
 }

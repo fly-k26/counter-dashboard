@@ -1,0 +1,28 @@
+@use "../../styles/common";
+
+.footer-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  padding: 0 8px; // Manjši stranski odmik za lepšo poravnavo z robom kartice
+}
+
+.footer-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-stat-label {
+  font-size: 0.85rem;
+  color: common.$color-text-secondary;
+  font-weight: 500;
+}
+
+.footer-stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: common.$color-text;
+}

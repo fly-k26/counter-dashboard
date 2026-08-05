@@ -5,6 +5,7 @@ import Alert from './Components/Alert/Alert.jsx';
 import CounterHero from './Components/CounterHero/CounterHero.jsx';
 import ActionButtons from './Components/ActionButtons/ActionButtons.jsx';
 import ResetButton from './Components/ResetButton/ResetButton.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <ActionButtons />
                 <ResetButton />
             </section>
+            <Footer />
         </main>
     );
 }
