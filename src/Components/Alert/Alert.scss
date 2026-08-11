@@ -14,7 +14,9 @@
 
 .alert-icon {
   color: common.$color-warning;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .alert-text {

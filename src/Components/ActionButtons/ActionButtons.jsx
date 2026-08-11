@@ -1,16 +1,16 @@
-import { Plus, Minus } from 'lucide-react';
+import { Minus, Plus } from 'lucide-react';
 import './ActionButtons.scss';
 
-function ActionButtons() {
+function ActionButtons({ t }) {
     return (
         <div className="action-buttons">
             <button type="button" className="action-btn action-btn-logout">
-                <Minus className="action-btn-icon" size={20} />
-                <span>Odjava</span>
+                <Minus size={20} />
+                <span>{t.buttonLogout}</span>
             </button>
             <button type="button" className="action-btn action-btn-login">
-                <Plus className="action-btn-icon" size={20} />
-                <span>Prijava</span>
+                <Plus size={20} />
+                <span>{t.buttonLogin}</span>
             </button>
         </div>
     );

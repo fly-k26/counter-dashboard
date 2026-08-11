@@ -1,11 +1,11 @@
-import { TriangleAlert } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 import './Alert.scss';
 
-function Alert() {
+function Alert({ t }) {
     return (
         <div className="alert">
-            <TriangleAlert className="alert-icon" />
-            <span className="alert-text">Kapaciteta skoraj dosežena</span>
+            <div className="alert-icon"><AlertTriangle size={18} /></div>
+            <span className="alert-text">{t.alertAlmostFull}</span>
         </div>
     );
 }
