@@ -1,10 +1,10 @@
 import { RotateCcw } from 'lucide-react';
 import './ResetButton.scss';
 
-function ResetButton({ t }) {
+function ResetButton({ onReset, t }) {
     return (
         <div className="reset-container">
-            <button type="button" className="reset-btn">
+            <button type="button" className="reset-btn" onClick={onReset}>
                 <RotateCcw size={16} />
                 <span>{t.buttonReset}</span>
             </button>
